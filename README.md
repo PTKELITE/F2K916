@@ -109,7 +109,7 @@ wget -O /workspace/runpod-slim/ComfyUI/models/loras/klein_snofs_v1_4.safetensors
 ```
 ## Authors
 
-...((ELLITE))...
+...((ELITE))...
 * 1.6
     * Initial Release
 	
