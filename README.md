@@ -1,9 +1,10 @@
+#LAST LOG: 22-06-2026 11:00
 
 #ONLY RUN TO RUNPOD (ref=aoxe4vh4) SUPPORT ME (https://runpod.io?ref=aoxe4vh4) :D
 
-https://github.com/PTKELITE/F2K916 - PROJECT
+https://github.com/PTKELITE/F2K916 - PROJECT GITHUB
 
-(https://console.runpod.io/deploy?template=xbnsy24tdh&ref=aoxe4vh4)  -PLAY AND RUN V1.6
+(https://console.runpod.io/deploy?template=xbnsy24tdh&ref=aoxe4vh4)  -TEMPLATE PLAY AND RUN V1.6
 
 (https://runpod.io?ref=aoxe4vh4) -- REFFERS LINK GAIN TO $5 AT $500 BONUS REFFERS LINK ADD CREDIT TO FIRST RUNPOD START
 
@@ -11,24 +12,41 @@ THANKS! :D
 
 # F2K916
 FLUX 2 KLEIN 9B GGUF CLIP LOADER UNCENSORED XXXTENSION V.1.6 (SFW, NSFW,  IPAINTING, I2I, I2I + IMAGE REFERENCE)
+
 # FLUX 2 KLEIN GGUF XXX I2I V1.6
 * How to use the actual template
-run after reflece to civitai key and Huggface key on script,
+run RUNPOD TEMPLATE after reflece to civitai key and Huggface key on script,
 
 this easy processe only replace work "Your HUGGFACE KEY" and "Your CIVITAI  KEY" to your key respective key plataform.
 
 REPLACE:
 INPUTIMAGEID FOR IMAGENS/WORKFLOW INPUT AND WORKFLOWS 
 
+TAG1:Your HUGGFACE KEY
+TAG2:Your CIVITAI  KEY
+AFTER REPLACE (CTRL+F) ALL TOKENS, SAVE FILE OR TEXT TO FIRT TO LOAD ALL START YOUR KEYTOKEN ON NEXTS STARTS
+
 BUG:
 latent2rgb NOT FUN, PLASE SELECT MANUALLY TO OPTION DO EXECUTION latent2rgb FOT PREWIE GENERATION ON REAL TIME
 
 
-#FLUX LINKS WORKFLOWS
+#FLUX LINKS WORKFLOWS:
 
 
+
+
+#FLUX INSTALL DEPENDENCIES AND LORAS:
 
 ```
+
+# Tags: 
+#TAG1:Your HUGGFACE KEY
+#TAG1:Your CIVITAI  KEY
+# AFTER REPLACE (CTRL+F) ALL TOKENS, SAVE FILE OR TEXT TO FIRT TO LOAD ALL START YOUR KEYTOKEN ON NEXTS STARTS
+#DOWNLOAD TO IMAGE AND WORKFLOW TO Comfy
+#REPLACE INPUTIMAGEID TO ID IMAGEM GOOGLE OR JSON
+
+
 # 1. Configuração e Correção Definitiva do ComfyUI-GGUF
 cd /workspace/runpod-slim/ComfyUI/custom_nodes && \
 git clone https://github.com/city96/ComfyUI-GGUF.git && \
@@ -64,6 +82,16 @@ cd /workspace/runpod-slim/ComfyUI/user/default/workflows && \
 python3 -m pip install --upgrade gdown && \
 export PATH="$HOME/.local/bin:$PATH" && \
 gdown INPUTIMAGEID && \
+
+# 5.5 Download de Workflows (Imagem com JSON embutido) via GitHub Raw
+mkdir -p /workspace/runpod-slim/ComfyUI/user/default/workflows && \
+cd /workspace/runpod-slim/ComfyUI/user/default/workflows && \
+wget -O "template_workflow.png" "https://raw.githubusercontent.com/PTKELITE/F2K916/refs/heads/main/TEMPLATES/NSFW/%2B18%20BLOWJOB%20FLUX2DV9B%20(V1-6%20-%20ALPHA).png"
+
+# 6. Download de Imagens na Pasta Input
+mkdir -p /workspace/runpod-slim/ComfyUI/input && \
+cd /workspace/runpod-slim/ComfyUI/input && \
+wget -O "template_input.png" "https://raw.githubusercontent.com/PTKELITE/F2K916/refs/heads/main/TEMPLATES/NSFW/%2B18%20BLOWJOB%20FLUX2DV9B%20(V1-6%20-%20ALPHA).png"
 
 
 # 6. Download de Imagens na Pasta Input IMAGENS/WORFLOW
@@ -111,8 +139,9 @@ wget -O /workspace/runpod-slim/ComfyUI/models/loras/klein_snofs_v1_4.safetensors
 
 ...((ELITE))...
 * 1.6
-    * Initial Release
+    * Initial ALPHA Release 22-06-2026 11:00
 	
+	#TAG: TEMPLATE RUNPOD READ-ME
 	
 	#FOR WORKFLOW TEMPLATE RUN TO RUNPOD TEMPLATE:
 	https://console.runpod.io/deploy?template=xbnsy24tdh&ref=aoxe4vh4 (ref=aoxe4vh4) SUPPORT ME (https://runpod.io?ref=aoxe4vh4) :D
@@ -162,6 +191,6 @@ git:
 ...((ELITE))...
 
 * 1.6
-    * OFICIAL RELEASED
+    * OFICIAL APHA RELEASED 22-06-2026 11:00
 ```
 ```

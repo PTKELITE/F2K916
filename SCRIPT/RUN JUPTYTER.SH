@@ -1,8 +1,9 @@
-
 # Tags: 
 #TAG1:Your HUGGFACE KEY
 #TAG1:Your CIVITAI  KEY
 # AFTER REPLACE (CTRL+F) ALL TOKENS, SAVE FILE OR TEXT TO FIRT TO LOAD ALL START YOUR KEYTOKEN ON NEXTS STARTS
+#DOWNLOAD TO IMAGE AND WORKFLOW TO Comfy
+#REPLACE INPUTIMAGEID TO ID IMAGEM GOOGLE OR JSON
 
 
 # 1. Configuração e Correção Definitiva do ComfyUI-GGUF
@@ -40,6 +41,16 @@ cd /workspace/runpod-slim/ComfyUI/user/default/workflows && \
 python3 -m pip install --upgrade gdown && \
 export PATH="$HOME/.local/bin:$PATH" && \
 gdown INPUTIMAGEID && \
+
+# 5.5 Download de Workflows (Imagem com JSON embutido) via GitHub Raw
+mkdir -p /workspace/runpod-slim/ComfyUI/user/default/workflows && \
+cd /workspace/runpod-slim/ComfyUI/user/default/workflows && \
+wget -O "template_workflow.png" "https://raw.githubusercontent.com/PTKELITE/F2K916/refs/heads/main/TEMPLATES/NSFW/%2B18%20BLOWJOB%20FLUX2DV9B%20(V1-6%20-%20ALPHA).png"
+
+# 6. Download de Imagens na Pasta Input
+mkdir -p /workspace/runpod-slim/ComfyUI/input && \
+cd /workspace/runpod-slim/ComfyUI/input && \
+wget -O "template_input.png" "https://raw.githubusercontent.com/PTKELITE/F2K916/refs/heads/main/TEMPLATES/NSFW/%2B18%20BLOWJOB%20FLUX2DV9B%20(V1-6%20-%20ALPHA).png"
 
 
 # 6. Download de Imagens na Pasta Input IMAGENS/WORFLOW
